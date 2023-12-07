@@ -1,18 +1,15 @@
 input.onButtonPressed(Button.A, function () {
     numero += 1
     basic.showNumber(numero)
-    music.play(music.builtinPlayableSoundEffect(soundExpression.spring), music.PlaybackMode.UntilDone)
-    if (numero >= 9) {
-        numero = 0
-    }
+    music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone)
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showNumber(0)
 })
 input.onButtonPressed(Button.B, function () {
     numero += -1
     basic.showNumber(numero)
-    music.play(music.builtinPlayableSoundEffect(soundExpression.hello), music.PlaybackMode.UntilDone)
-    if (numero <= 9) {
-        numero = 1
-    }
+    music.play(music.builtinPlayableSoundEffect(soundExpression.sad), music.PlaybackMode.UntilDone)
 })
 let numero = 0
 basic.showNumber(0)
