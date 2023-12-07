@@ -1,5 +1,5 @@
 {
-    "name": "temperatura",
+    "name": "numeros",
     "description": "",
     "dependencies": {
         "core": "*",
